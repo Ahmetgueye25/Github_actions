@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: afficher install
-        run: eho install
+        run: echo install
   test:
     runs-on: ubuntu
     steps:
