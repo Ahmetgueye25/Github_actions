@@ -1,12 +1,17 @@
 name: Linux Basics
+
 on: push
+
 jobs:
   commands:
     runs-on: ubuntu-latest
+
     steps:
       - name: Afficher Bonjour
         run: echo "Bonjour"
+
       - name: Afficher le répertoire courant
         run: pwd
+
       - name: Afficher les fichiers du répertoire
-        run: find . -type f 
+        run: find . -type f
