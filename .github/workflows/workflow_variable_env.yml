@@ -3,11 +3,11 @@ on:
   push:
     paths:
       - .github/workflows/workflow_variable_env.yml
-env:
-  NAME: HAMADOU
 jobs:
   Afficher_une_variable_environnement:
     runs-on: ubuntu-latest
+    env:
+      NAME: HAMADOU
     steps:
       - name: afficher la variable
         run: echo "Bonjour $NAME"
