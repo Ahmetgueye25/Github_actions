@@ -1,0 +1,14 @@
+name: Créer une variable d'environnement
+on:
+  push:
+    paths:
+      - .github/workflows/workflow_variable_env.yml
+env:
+  NAME: HAMADOU
+jobs:
+  Afficher_une_variable_d'environnement
+    runs-on: ubuntu-latest
+    steps:
+      - name: afficher la variable
+        run: echo "Bonjour $NAME"
+
