@@ -1,4 +1,4 @@
-name: workflow sur les conditions simples
+name: workflow sur les conditions de réussite
 
 on:
   push:
@@ -9,9 +9,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Toujours
-        run: echo "Toujours"
+      - name: step 1
+        run: echo step 1
 
-      - name: Seulement sur main
-        if: github.ref == 'refs/heads/main'
-        run: echo "Sur la branche main"
+      - name: step 2
+        if: success()
+        run: echo "step 2"
+
+      - name: step 3
+        run: echo step 3
