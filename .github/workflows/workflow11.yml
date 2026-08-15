@@ -1,12 +1,17 @@
-name: Infos sur le context
+name: workflow sur les conditions simples
 
 on:
   push:
-    paths:
-      - .github/workflows/workflow11.yml
+  workflow_dispatch:
+
 jobs:
-  afficher_repo:
+  test:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Afficher le nom du repo
-        run: echo "Nom du repo :" ${{ github.event.repository.name }}
+      - name: Toujours
+        run: echo "Toujours"
+
+      - name: Seulement sur main
+        if: github.ref == 'refs/heads/main'
+        run: echo "Sur la branche main"
