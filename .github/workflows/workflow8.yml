@@ -1,0 +1,16 @@
+name: Récupérer le code du dépot
+on:
+  push:
+    paths:
+      - .github/workflows/workflow8.yml
+jobs:
+  dépot:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+      - name: afficher le répertoire courant
+        run: pwd
+      - name: afficher tous les fichiers
+        run: ls
+
