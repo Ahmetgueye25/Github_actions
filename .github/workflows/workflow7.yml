@@ -1,0 +1,21 @@
+name: Workflow avec trois jobs
+on:
+  push:
+    paths:
+      - .github/workflows/workflow7.yml
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: afficher install
+        run: eho install
+  test:
+    runs-on: ubuntu
+    steps:
+      - name: afficher test
+        run: echo test
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: afficher build
+        run: echo build
