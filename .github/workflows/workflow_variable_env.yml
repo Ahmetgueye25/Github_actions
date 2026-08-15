@@ -6,7 +6,7 @@ on:
 env:
   NAME: HAMADOU
 jobs:
-  Afficher_une_variable_d'environnement
+  Afficher_une_variable_d'environnement:
     runs-on: ubuntu-latest
     steps:
       - name: afficher la variable
