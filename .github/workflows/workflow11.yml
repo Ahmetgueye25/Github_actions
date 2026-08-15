@@ -1,0 +1,24 @@
+name: Variables à différents niveaux
+on:
+  push:
+    paths:
+      - .github/workflows/workflow11.yml
+env:
+  GLOBAL: global
+jobs:
+  afficher_job:
+    env:
+      JOB: job
+    runs-on: ubuntu-latest
+    steps:
+      - name: afficher la variable globale
+        run: echo $GLOBAL
+      - name: afficher la variable de scope job
+        run: echo $JOB
+      - name: afficher la variable locale step
+        run: echo $STEP 
+        env:
+          STEP: step
+  
+
+
