@@ -1,4 +1,4 @@
-name: Nom du repository
+name: Infos sur le context
 
 on:
   push:
@@ -8,5 +8,9 @@ jobs:
   afficher_repo:
     runs-on: ubuntu-latest
     steps:
+      - name: Afficher workflow
+        run: echo ${{ github.workflow }}
       - name: Afficher le repository
         run: echo "${{ github.repository }}"
+      - name: afficher le déclencheur du workflow
+        run: echo ${{ github.actor }}
