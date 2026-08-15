@@ -1,0 +1,17 @@
+name: Premier workflow
+
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Bonjour
+        run: echo "Hello GitHub Actions"
+
+      - name: Où suis-je ?
+        run: pwd
+
+      - name: Lister les fichiers
+        run: ls
