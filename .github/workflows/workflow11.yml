@@ -10,5 +10,3 @@ jobs:
     steps:
       - name: Afficher le numéro
         run: echo "Exécution n° : ${{ github.run_number }}"
-      - name: Afficher le numéro
-        run: echo "Exécution n° : ${{ github.run_number }}"
