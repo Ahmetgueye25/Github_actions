@@ -4,7 +4,7 @@ on:
     paths:
       - .github/workflows/workflow8.yml
 jobs:
-  dépot:
+  depot:
     runs-on: ubuntu-latest
     steps: 
       - name: Récupérer le dépôt
