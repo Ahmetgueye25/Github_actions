@@ -10,6 +10,5 @@ jobs:
     steps:
       - name: Afficher le numéro
         run: echo "Exécution n° : ${{ github.run_number }}"- name: Afficher le repository
-        run: echo "${{ github.repository }}"
-      - name: afficher le déclencheur du workflow
-        run: echo ${{ github.actor }}
+      - name: Afficher le numéro
+        run: echo "Exécution n° : ${{ github.run_number }}"
