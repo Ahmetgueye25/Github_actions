@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Afficher le numéro
-        run: echo "Exécution n° : ${{ github.run_number }}"- name: Afficher le repository
+        run: echo "Exécution n° : ${{ github.run_number }}"
       - name: Afficher le numéro
         run: echo "Exécution n° : ${{ github.run_number }}"
