@@ -10,11 +10,8 @@ jobs:
 
     steps:
       - name: step 1
-        run: echo step 1
+        run: ls fail
 
       - name: step 2
-        if: success()
-        run: echo "step 2"
-
-      - name: step 3
-        run: echo step 3
+        if: failure()
+        run: echo "Erreur détectée"
