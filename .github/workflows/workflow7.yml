@@ -10,7 +10,7 @@ jobs:
       - name: afficher install
         run: echo install
   test:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       - name: afficher test
         run: echo test
