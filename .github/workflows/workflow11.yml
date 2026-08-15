@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Afficher le nom du repo
-        run: echo "Nom du repo :" ${{ github.run_number }}
+        run: echo "Nom du repo :" ${{ github.event.repository_number }}
