@@ -1,0 +1,13 @@
+name: CI
+on:
+  push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Afficher hello
+       run: echo "Hello"
+     - name: afficher le répertoire
+       run: pwd
+     - name: afficher ls
+       run: ls
